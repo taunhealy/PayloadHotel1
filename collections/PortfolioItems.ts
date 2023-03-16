@@ -1,5 +1,4 @@
 import { CollectionConfig } from 'payload/types';
-import formatSlug from '../utilities/formatSlug';
 
 export const PortfolioItems: CollectionConfig = {
   slug: 'portfolioItems',
@@ -28,9 +27,6 @@ export const PortfolioItems: CollectionConfig = {
       type: 'text',
       admin: {
         position: 'sidebar',
-      },
-      hooks: {
-        beforeValidate: [formatSlug('title')],
       },
     },
   ],
